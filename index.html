@@ -5,136 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My future CV</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/personal-info.css" />
   </head>
   <body>
-    <section class="main-info">
-      <div class="main-info-introducing-of-me">
-        <img class="main-info-photo" src="./img/cv_avatar.jpg" alt="Photo" />
-        <h3>Evgeniy Pronevich</h3>
-        <p>Minsk, 05.09.1997 (24 y.o.)</p>
-      </div>
-      <div class="main-info-my-status">
-        <ul>
-          <li>RS-School student</li>
-          <li>Technical Support Specialist</li>
-        </ul>
-      </div>
-      <div class="main-info-contact-list">
-        <h3>My Contact Info</h3>
-        <ul>
-          <li>Address: st. Vasnetsova, Minsk</li>
-          <li>Phone: +375 29 557 98 95</li>
-          <li>E-mail: Evgeniy.A.Pronevich@gmail.com</li>
-          <li>GitHub: Evgeniy-Pronevich</li>
-          <li>Discord: Evgeniy#1283</li>
-          <li>Telegram: @pron997</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="about-me">
-      <div class="about-me-content">
-        <h3>About Me</h3>
-        <p>
-          I’m 24 years old. Working as technical support specialist (OSTS -
-          On-site technical support) in international company more than 3 years.
-          My job gave me start in understanding technologies, after which I
-          became interested in programming. I decided to studying JavaScript
-          because this language is one of the most popular programming language.
-        </p>
-      </div>
-      <div class="about-me-skills">
-        <h3>Skills</h3>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Figma (for web development)</li>
-          <li>Windows OS</li>
-          <li>Editors: VS Code</li>
-        </ul>
-      </div>
-      <div class="about-me-education">
-        <h3>Education</h3>
-        <ul>
-          <li><b>Yanka Kupala State University of Grodno</b></li>
-          <ul>
-            <li>Computer Security</li>
-          </ul>
-          <li><b>Udemy</b></li>
-          <ul>
-            <li>Absolute beginers guide to cyber security 2020</li>
-            <li>Cybersecurity manager</li>
-            <li>Information Security Awarness-ISO 27001:2013</li>
-            <li>Introduction to Security Awarness Campaigns</li>
-            <li>Cybersecurity for HR Professionals</li>
-            <li>Fundamentals of Information Security Management</li>
-          </ul>
-        </ul>
-      </div>
-      <div class="about-me-languages-lvl">
-        <h3>Languages</h3>
-        <ul>
-          <li><b>Russian</b> - native</li>
-          <li><b>English</b> - A2</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="code-example">
-      <div class="code-example-title">
-        <h3>Code Example</h3>
-      </div>
-      <div class="code-example-js">
-        <pre>
-          <code>
-         function slideShow() {
-           //array of images added manually in another section of code
-              document.slideshow.src = images[i];
-            }
-            var buttonStart = getComputedStyle(
-                document.getElementsByName("buttonStart")
-                );
-      
-            function startSlideShow() {
-              document.slideshow.src = images[i];
-              const hiddenbutton = document.querySelector(".btn");
-              hiddenbutton.classList.add("none");
-      
-              // For certain slides - different times
-              if (i == 64) {
-                setTimeout("startSlideShow()", 30000);
-                i++;} else {
-                    if (i == 47) {
-                      setTimeout("startSlideShow()", 7000);
-                      i++;
-                    }
-                    else {
-                      if (i == 46) {
-                        setTimeout("startSlideShow()", 25000);
-                        i++;
-                      } else {
-                        if (i < images.length - 1) {
-                          setTimeout("startSlideShow()", time);
-                          i++;
-                        } else {
-                          document.location.reload();
-                      }}}}}
-            window.onload = slideShow;
-        
-          </code>
-        </pre>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <img src="./img/rs_school_js.svg" alt="" />
-          <a href="https://rs.school/js/">The Rolling Scopes School</a>
-          <a href="https://rs.school/js/">My GitHub</a>
-          <p>2022</p>
+    <section class="person-info">
+      <div class="content-row">
+        <div class="name-specialization">
+          <h1 class="my-name">Evgeniy Pronevich</h1>
+          <h4 class="specialization">
+            RS-School student & Technical Support Specialist
+          </h4>
+        </div>
+        <div class="addresses">
+          <p>Address: st. Vasnetsova, Minsk</p>
+          <p>E-mail: Evgeniy.A.Pronevich@gmail.com</p>
         </div>
       </div>
-    </footer>
+    </section>
   </body>
 </html>
