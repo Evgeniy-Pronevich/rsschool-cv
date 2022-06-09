@@ -1,8 +1,9 @@
 .person-info {
   font-family: Oxygen, sans-serif;
-  padding-left: 75px;
-  padding-right: 75px;
+  margin-left: 75px;
+  margin-right: 75px;
   padding-top: 80px;
+  border-bottom: 1px solid white;
 }
 .content-row {
   display: flex;

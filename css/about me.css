@@ -1,13 +1,11 @@
-.content-row {
-  display: flex;
-  flex-direction: row;
-}
 .main-info-left-collumn {
-  padding-left: 305px;
-  margin-left: 23px;
-  padding-right: 50px;
-  margin-right: 23px;
+  margin-left: 305px;
+  padding-left: 60px;
+  margin-right: 50px;
+  padding-right: 60px;
+  padding-bottom: 60px;
   width: 931px;
+  border: 1px solid white;
 }
 
 pre {
