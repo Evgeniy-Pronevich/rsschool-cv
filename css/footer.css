@@ -1,0 +1,25 @@
+.footer {
+  font-family: Oxygen, sans-serif;
+  margin-left: 75px;
+  margin-right: 75px;
+  padding-bottom: 30px;
+}
+.footer-row {
+  border-top: 1px solid white;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-rsschool-logo {
+  width: 150px;
+}
+.creation-year {
+  font-size: 20px;
+}
+
+a {
+  color: #ff8a00;
+  font-size: 25px;
+  font-weight: 900;
+}
