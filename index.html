@@ -7,6 +7,7 @@
     <title>My future CV</title>
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/personal-info.css" />
+    <link rel="stylesheet" href="./css/about me.css" />
   </head>
   <body>
     <section class="person-info">
@@ -23,5 +24,74 @@
         </div>
       </div>
     </section>
+    <section class="main-info"></section>
+    <div class="main-info-row">
+      <div class="main-info-left-collumn">
+        <div class="education-content">
+          <div class="heading">Education</div>
+          <ul>
+            <li>Yanka Kupala State University of Grodno</li>
+            <ul>
+              <li>Computer Security</li>
+            </ul>
+          </ul>
+        </div>
+
+        <div class="about-me-content">
+          <div class="heading">About Me</div>
+          <p>
+            I’m 24 years old. Working as technical support specialist (OSTS -
+            On-site technical support) in international company more than 3
+            years. My job gave me start in understanding technologies, after
+            which I became interested in programming. I decided to studying
+            JavaScript because this language is one of the most popular
+            programming language.
+          </p>
+        </div>
+        <div class="code-example-content"></div>
+        <div class="heading">Code Example</div>
+        <pre><code>function slideShow() {
+          //array of images added manually in another section of code
+             document.slideshow.src = images[i];
+           }
+           var buttonStart = getComputedStyle(
+               document.getElementsByName("buttonStart")
+               );
+     
+           function startSlideShow() {
+             document.slideshow.src = images[i];
+             const hiddenbutton = document.querySelector(".btn");
+             hiddenbutton.classList.add("none");
+     
+             // For certain slides - different times
+             if (i == 64) {
+               setTimeout("startSlideShow()", 30000);
+               i++;} else {
+                   if (i == 47) {
+                     setTimeout("startSlideShow()", 7000);
+                     i++;
+                   }
+                   else {
+                     if (i == 46) {
+                       setTimeout("startSlideShow()", 25000);
+                       i++;
+                     } else {
+                       if (i < images.length - 1) {
+                         setTimeout("startSlideShow()", time);
+                         i++;
+                       } else {
+                         document.location.reload();
+                     }}}}}
+           window.onload = slideShow;</code></pre>
+      </div>
+      <div class="main-info-right-collumn">
+        <div class="heading">This Is Me</div>
+        <div class="heading">Contact</div>
+        <div class="heading">Skills</div>
+        <div class="heading">Tools</div>
+        <div class="heading">Languages</div>
+        <div class="heading">Achivements</div>
+      </div>
+    </div>
   </body>
 </html>
